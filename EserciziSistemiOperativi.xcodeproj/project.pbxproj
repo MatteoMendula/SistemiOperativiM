@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB83983A1A5D80B800B91F34 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FB8398391A5D80B800B91F34 /* main.c */; };
+		FB8398471A5D82FC00B91F34 /* Es2.c in Sources */ = {isa = PBXBuildFile; fileRef = FB8398391A5D80B800B91F34 /* Es2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,9 @@
 
 /* Begin PBXFileReference section */
 		FB8398361A5D80B800B91F34 /* EserciziSistemiOperativi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EserciziSistemiOperativi; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB8398391A5D80B800B91F34 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FB8398391A5D80B800B91F34 /* Es2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Es2.c; sourceTree = "<group>"; };
+		FB8398431A5D825000B91F34 /* Es0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Es0.c; sourceTree = "<group>"; };
+		FB8398451A5D82C900B91F34 /* Es1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Es1.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,9 @@
 		FB8398381A5D80B800B91F34 /* EserciziSistemiOperativi */ = {
 			isa = PBXGroup;
 			children = (
-				FB8398391A5D80B800B91F34 /* main.c */,
+				FB8398431A5D825000B91F34 /* Es0.c */,
+				FB8398451A5D82C900B91F34 /* Es1.c */,
+				FB8398391A5D80B800B91F34 /* Es2.c */,
 			);
 			path = EserciziSistemiOperativi;
 			sourceTree = "<group>";
@@ -118,7 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB83983A1A5D80B800B91F34 /* main.c in Sources */,
+				FB8398471A5D82FC00B91F34 /* Es2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +236,7 @@
 				FB83983F1A5D80B800B91F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
