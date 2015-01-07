@@ -27,34 +27,94 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#define M 2 //numero thread
-#define K 5 //elementi da moltiplicare dal K-esimo thread
+#define M 3 //numero thread
+#define K 10 //elementi da moltiplicare dal K-esimo thread
 #define N K*M //elementi dell'array generico
+#define MAX_RAND 100
 
 // Vettori di elementi A e B
-int A[N], B[N];
+int A[N], B[N], LOG[M];
+int RIS;
+pthread_mutex_t lock;
 
 void * single_thread(void * t)
 {
-    int tid = (intptr_t) t; //thread-id
-    int i; // indice
-    int displ=0; // displacement
-    int result=0; // risultato
+    int tid = (int) t;
+    int start = tid * K; //Punto di partenza per fare calcoli
+    int somma = 0;
     
-    // Displacement = numero di partenza dove ogni thread deve partire per il calcolo del prodotto scalare dei due vettori
-    displ = tid*K;
+    for(int i = start; i < start + K; i++)
+        somma += A[i] * B[i];
     
-    // Calcolo il prodotto scalare della parte di competenza
-    for(i=displ; i < displ+K; i++)
-    {
-        result+=(A[i]*B[i]);
-    }
+    //Sezione critica
     
-    pthread_exit((void*)(intptr_t) result);
+    pthread_mutex_lock(&lock);
+    RIS+=somma;
+    LOG[tid] = tid;
+    pthread_mutex_unlock(&lock);
+    
+    //Fine sezione critica
+    
+    return NULL;
 }
 
 int main(int argc, const char * argv[])
 {
+    int i;
+    
+    void* status;
+    int result;
+    
+    //threads
+    pthread_t threads[M];
+    
+    
+    printf("Thread principale avviato con valori: M = %d, K = %d, N = %d\n", M, K, N);
+    
+    //inizializzo i vettori A e B
+    srand((unsigned int)time(NULL));
+    
+    printf("Creo i vettori\n");
+    for(i = 0; i < N; i++)
+    {
+        A[i] = rand() % MAX_RAND;
+        B[i] = rand() % MAX_RAND;
+    }
+    
+    //creazione mutex
+    if(pthread_mutex_init(&lock, NULL)!=0)
+    {
+        printf("Failed to create mutex\n");
+        exit(-1);
+    }
 
+    //creazione threads
+    for(i = 0; i < M; i++)
+    {
+        result = pthread_create(&threads[i], NULL, single_thread, (void *)(intptr_t) i);
+        if(result)
+        {
+            printf("ERRORE codice: %d\n", result);
+            exit(-1);
+        }
+    }
+    
+    //join e stampa
+    for(i = 0; i < M; i++)
+    {
+        result = pthread_join(threads[i], &status);
+        if(result)
+            printf("Errore nel join del thread %d\n",i);
+    }
+    
+    //distruzione del mutex
+    pthread_mutex_destroy(&lock);
+    
+    printf("Contenuto di LOG: ");
+    
+    for(i = 0; i < M; i++)
+        printf("LOG[%d] = %d, ", i, LOG[i]);
+    
+    printf("\nRisultato del prodotto scalare tra A e B = %d\n", RIS);
     return 0;
 }
