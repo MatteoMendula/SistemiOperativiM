@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB83985B1A5D9E7200B91F34 /* Es3_b.c in Sources */ = {isa = PBXBuildFile; fileRef = FB83985A1A5D9E7200B91F34 /* Es3_b.c */; };
+		FBCB50F51A5EEACB002B2EFA /* es4.c in Sources */ = {isa = PBXBuildFile; fileRef = FBCB50F41A5EEACB002B2EFA /* es4.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +32,8 @@
 		FB83985C1A5D9EF800B91F34 /* es1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es1.pdf; path = "Esercizio 1/es1.pdf"; sourceTree = "<group>"; };
 		FB83985D1A5D9F0000B91F34 /* es2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es2.pdf; path = "Esercizio 2/es2.pdf"; sourceTree = "<group>"; };
 		FB83985E1A5D9F0700B91F34 /* es3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es3.pdf; path = "Esercizio 3/es3.pdf"; sourceTree = "<group>"; };
+		FBAAF0E41A5EA88300F447D6 /* Es3_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Es3_c.c; path = "Esercizio 3/Es3_c.c"; sourceTree = "<group>"; };
+		FBCB50F41A5EEACB002B2EFA /* es4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = es4.c; path = "Esercizio 4/es4.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				FB83984B1A5D918600B91F34 /* Esercizio 1 */,
 				FB83984C1A5D919100B91F34 /* Esercizio 2 */,
 				FB83984D1A5D919A00B91F34 /* Esercizio 3 */,
+				FBCB50F31A5EEAB3002B2EFA /* Esercizio 4 */,
 			);
 			path = EserciziSistemiOperativi;
 			sourceTree = "<group>";
@@ -104,8 +107,17 @@
 				FB83985E1A5D9F0700B91F34 /* es3.pdf */,
 				FB8398541A5D9E2B00B91F34 /* Es3.c */,
 				FB83985A1A5D9E7200B91F34 /* Es3_b.c */,
+				FBAAF0E41A5EA88300F447D6 /* Es3_c.c */,
 			);
 			name = "Esercizio 3";
+			sourceTree = "<group>";
+		};
+		FBCB50F31A5EEAB3002B2EFA /* Esercizio 4 */ = {
+			isa = PBXGroup;
+			children = (
+				FBCB50F41A5EEACB002B2EFA /* es4.c */,
+			);
+			name = "Esercizio 4";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB83985B1A5D9E7200B91F34 /* Es3_b.c in Sources */,
+				FBCB50F51A5EEACB002B2EFA /* es4.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
