@@ -23,10 +23,8 @@
 * In particolare, la soluzione deve implementare una politica
 * di sincronizzazione dei thread che rispetti le specifiche
 * date, ed inoltre i vincoli seguenti:
-* • nell’accesso alla pista: i principianti abbiano la
-*   precedenza sugli esperti; a parità di categoria, si privilegino i gruppi meno numerosi.
-* • nell’uscita dalla pista: gli esperti abbiano la precedenza sui principianti; a parità di categoria, si
-* privilegino i gruppi più numerosi.
+* • nell’accesso alla pista: i principianti abbiano la precedenza sugli esperti; a parità di categoria, si privilegino i gruppi meno numerosi.
+* • nell’uscita dalla pista: gli esperti abbiano la precedenza sui principianti; a parità di categoria, si privilegino i gruppi più numerosi.
 */
 
 #include <stdio.h>
@@ -61,11 +59,49 @@ pthread_t gruppi[N_GRUPPI];
 void gruppoPrincipianti(int persone, int tid)
 {
     printf("Creato un gruppo Principianti\n");
+    
+    /*
+     * POLITICA INGRESSO PRINCIPIANTI
+     * In entrata deve aspettare se:
+     * - Pista piena
+     * - Gruppo di principianti meno numeroso in attesa
+     * - Principianti < Esperti in pista
+    */
+    
+    
+    
+    /*
+     * POLITICA USCITA PRINCIPIANTI
+     * In uscita deve aspettare se:
+     * - Gruppi di esperti più numerosi
+     * - Gruppo di esperti in uscita
+     * - Principianti < Esperti in pista
+     */
+    
 }
 
 void gruppoEsperti(int persone, int tid)
 {
     printf("Creato un gruppo Esperti\n");
+    
+    /*
+     * POLITICA INGRESSO ESPERTI
+     * In entrata deve aspettare se:
+     * - Pista piena
+     * - Gruppo di principianti in attesa di entrare
+     * - Gruppo di esperti meno numerosi
+     * - Principianti < Esperti in pista
+     */
+    
+    
+    
+    /*
+     * POLITICA USCITA ESPERTI
+     * In uscita deve aspettare se:
+     * - Gruppi di esperti più numerosi
+     * - Principianti < Esperti in pista
+     */
+    
 }
 
 void * thread(void * t)
