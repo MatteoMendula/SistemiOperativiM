@@ -90,10 +90,11 @@ func cliente(id int){
 	
 	//mando prenotazione (asincrona)
 	prenotazioni <- id 
+	fmt.Printf("[cliente %d] richiesta prenotazione inviata\n", id)
 	
 	//attendo ticket o errore
 	ticket = <- ACK_PRENOTAZIONI[id]
-	fmt.Printf("[cliente %d]  richiesta prenotazione - ottenuto ticket %d\n ", id, ticket)
+	fmt.Printf("[cliente %d] ottenuto ticket %d\n", id, ticket)
 	
 	if ticket == -1 {
 		//troppe prenotazioni... esco
@@ -138,9 +139,9 @@ func sfoglina(id int){
 		risposta = <- ACK_DEPOSITI[id]
 		 
 		if risposta {
-			 fmt.Printf("[sfoglina %d]  ho depositato una nuova confezione.\n ", id)
+			 fmt.Printf("[sfoglina %d] ho depositato i tortellini in frigo.\n", id)
 		} else {
-			fmt.Printf("[sfoglina %d]  termino\n ", id)
+			fmt.Printf("[sfoglina %d]  termino\n", id)
 			done <- true
 			return
 		}
@@ -157,81 +158,85 @@ func laboratorio(clienti int, sfogline int){
 	var fine bool = false
 	var contatore int = 0
 	var i int
-
-	//logica del laboratorio
-	select
-	{
-		// se c'è spazio in frigo x assumerà il valore dell'id della sfoglina che vuole depositare i tortellini
-		case x:= <-when(((in_frigo < MAX_FRIGO) && (fine == false)), deposita):
-			in_frigo++
-			fmt.Printf("[Sfoglina %d] Deposito tortellini in frigo...\n", x)
-			ACK_DEPOSITI[x] <- true
-			
-		//se non 
-		case x:= <-when((fine == true), deposita):
-			fmt.Printf("Spazio terminato... termino la sfoglina\n")
-			ACK_DEPOSITI[x] <- false
-			
-		//se ho una prenotazione
-		case x:= <- prenotazioni:
-			if contatore < MAX_PRENOTAZIONI {
-				 //accetta la prenotazione
-				 ticket[x] = contatore 
-				 ret_value = contatore
-				 contatore++
-				 da_ritirare++
-				 fmt.Printf("[laboratorio] Prenotata confezione per cliente %d: assegnato ticket %d ", x, ret_value)
-			} else {
-				//Troppe prenotazioni
-				ret_value = -1
-				fmt.Printf("[laboratorio] Troppe prenotazioni: rifiutata prenotazione al cliente %d\n", x)
-			}
-			
-			//mando la risposta
-			ACK_PRENOTAZIONI[x] <- ret_value
-		
-		//se è richiesto un ritiro
-		case x:= <- whenBiglietto(((in_frigo > 0) && (len(prenotazioni) == 0)), ritiri):
-			for i=0; i<clienti; i++{
-				if x.numero_prenotazione == ticket[i] { //il ticket esiste ed è valido!
-					prenotazione = i
-				}
-			}
-			
-			if prenotazione >=0 {
-				//ritiro valido
-				in_frigo--
-				da_ritirare--
-				ticket[prenotazione] = 0 //biglietto usato
-				fmt.Printf("[server]  cliente %d ha ritirato!  ", i)
-				if da_ritirare == 0 {
-					fine = true
-					fmt.Printf("[laboratorio]  completati ritiri! ")
+	
+	//ciclo di riproduzione infinito
+	for{
+		//logica del laboratorio
+		select
+		{
+			// se c'è spazio in frigo x assumerà il valore dell'id della sfoglina che vuole depositare i tortellini
+			case x:= <-when(((in_frigo < MAX_FRIGO) && (fine == false)), deposita):
+				in_frigo++
+				fmt.Printf("[laboratorio] Sfoglina %d depositi pure i tortellini in frigo\n", x)
+				ACK_DEPOSITI[x] <- true
+				
+			//se non 
+			case x:= <-when((fine == true), deposita):
+				fmt.Printf("Spazio terminato... la sfoglina puoò andare a casa\n")
+				ACK_DEPOSITI[x] <- false
+				
+			//se ho una prenotazione
+			case x:= <- prenotazioni:
+				if contatore < MAX_PRENOTAZIONI {
+					 //accetta la prenotazione
+					 ticket[x] = contatore 
+					 ret_value = contatore
+					 contatore++
+					 da_ritirare++
+					 fmt.Printf("[laboratorio] Prenotata confezione per cliente %d: assegnato ticket %d\n", x, ret_value)
+				} else {
+					//Troppe prenotazioni
+					ret_value = -1
+					fmt.Printf("[laboratorio] Troppe prenotazioni: rifiutata prenotazione al cliente %d\n", x)
 				}
 				
-				ACK_RITIRI[x.id_cliente] <- true
+				//mando la risposta
+				ACK_PRENOTAZIONI[x] <- ret_value
+			
+			//se è richiesto un ritiro
+			case x:= <- whenBiglietto(((in_frigo > 0) && (len(prenotazioni) == 0)), ritiri):
+				for i=0; i<clienti; i++{
+					if x.numero_prenotazione == ticket[i] { //il ticket esiste ed è valido!
+						prenotazione = i
+					}
+				}
 				
-			} else {
-				//ritiro non valido
-				fmt.Printf("[laboratorio]  cliente %d - RITIRO NEGATO!  \n", i)
-				ACK_RITIRI[x.id_cliente] <- false
-			}
-		case <- termina:
-			//è ora di chiudere il laboratorio
-			fmt.Printf("[laboratorio] FINE (sono rimaste %d confezioni in frigo..)!\n", in_frigo)
-			done <- true
-			return
+				if prenotazione >=0 {
+					//ritiro valido
+					in_frigo--
+					da_ritirare--
+					ticket[prenotazione] = 0 //biglietto usato
+					fmt.Printf("[laboratorio]  cliente %d ha ritirato!\n", i)
+					if da_ritirare == 0 {
+						fine = true
+						fmt.Printf("[laboratorio] completati ritiri!\n")
+					}
+					
+					ACK_RITIRI[x.id_cliente] <- true
+					
+				} else {
+					//ritiro non valido
+					fmt.Printf("[laboratorio] cliente %d - RITIRO NEGATO!\n", i)
+					ACK_RITIRI[x.id_cliente] <- false
+				}
+			case <- termina:
+				//è ora di chiudere il laboratorio
+				fmt.Printf("[laboratorio] FINE (sono rimaste %d confezioni in frigo..)!\n", in_frigo)
+				done <- true
+				return
+		}
 	}
 }
 
 func main(){
+	
 	var clienti int
 	var sfogline int
 
 	//ottengo informazioni
-	fmt.Printf("\n quanti clienti (max %d)? ", MAX_CLIENTI)
+	fmt.Printf("Quanti clienti (max %d)? ", MAX_CLIENTI)
 	fmt.Scanf("%d", &clienti)
-	fmt.Printf("\n quante sfogline (max %d)? ", MAX_SFOGLINE)
+	fmt.Printf("Quante sfogline (max %d)? ", MAX_SFOGLINE)
 	fmt.Scanf("%d", &sfogline)
 	
 	//inizializzo canali
