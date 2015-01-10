@@ -32,8 +32,6 @@
 		FB83985C1A5D9EF800B91F34 /* es1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es1.pdf; path = "Esercizio 1/es1.pdf"; sourceTree = "<group>"; };
 		FB83985D1A5D9F0000B91F34 /* es2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es2.pdf; path = "Esercizio 2/es2.pdf"; sourceTree = "<group>"; };
 		FB83985E1A5D9F0700B91F34 /* es3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es3.pdf; path = "Esercizio 3/es3.pdf"; sourceTree = "<group>"; };
-		FBAAF0E41A5EA88300F447D6 /* Es3_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Es3_c.c; path = "Esercizio 3/Es3_c.c"; sourceTree = "<group>"; };
-		FBCB50F41A5EEACB002B2EFA /* es4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = es4.c; path = "Esercizio 4/es4.c"; sourceTree = "<group>"; };
 		FBE0D6331A619A810088E97F /* Es5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Es5.c; path = "Esercizio 5/Es5.c"; sourceTree = "<group>"; };
 		FBE0D6351A619A8E0088E97F /* Es5.go */ = {isa = PBXFileReference; lastKnownFileType = text; name = Es5.go; path = "Esercizio 5/Es5.go"; sourceTree = "<group>"; };
 		FBE0D6361A61AD180088E97F /* Es5_A.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Es5_A.pdf; path = "Esercizio 5/Es5_A.pdf"; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				FB83984B1A5D918600B91F34 /* Esercizio 1 */,
 				FB83984C1A5D919100B91F34 /* Esercizio 2 */,
 				FB83984D1A5D919A00B91F34 /* Esercizio 3 */,
-				FBCB50F31A5EEAB3002B2EFA /* Esercizio 4 */,
 				FBE0D6321A619A490088E97F /* Esercizio 5 */,
 			);
 			path = EserciziSistemiOperativi;
@@ -112,17 +109,8 @@
 				FB83985E1A5D9F0700B91F34 /* es3.pdf */,
 				FB8398541A5D9E2B00B91F34 /* Es3.c */,
 				FB83985A1A5D9E7200B91F34 /* Es3_b.c */,
-				FBAAF0E41A5EA88300F447D6 /* Es3_c.c */,
 			);
 			name = "Esercizio 3";
-			sourceTree = "<group>";
-		};
-		FBCB50F31A5EEAB3002B2EFA /* Esercizio 4 */ = {
-			isa = PBXGroup;
-			children = (
-				FBCB50F41A5EEACB002B2EFA /* es4.c */,
-			);
-			name = "Esercizio 4";
 			sourceTree = "<group>";
 		};
 		FBE0D6321A619A490088E97F /* Esercizio 5 */ = {
