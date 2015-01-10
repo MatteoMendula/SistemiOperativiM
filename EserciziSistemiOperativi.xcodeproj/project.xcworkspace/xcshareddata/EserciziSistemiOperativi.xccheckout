@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B9EC5DA-ECCE-40D7-AD38-9BF2E7CADE63</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EserciziSistemiOperativi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>169F7083C5C7DE3CAD433765CFE5B1BC81DACD07</key>
+		<string>github.com:marmos91/SistemiOperativiM.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EserciziSistemiOperativi.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>169F7083C5C7DE3CAD433765CFE5B1BC81DACD07</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:marmos91/SistemiOperativiM.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>169F7083C5C7DE3CAD433765CFE5B1BC81DACD07</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>169F7083C5C7DE3CAD433765CFE5B1BC81DACD07</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EserciziSistemiOperativi</string>
+		</dict>
+	</array>
+</dict>
+</plist>
