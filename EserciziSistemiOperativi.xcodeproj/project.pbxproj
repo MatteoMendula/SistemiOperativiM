@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBE0D6341A619A810088E97F /* Es5.c in Sources */ = {isa = PBXBuildFile; fileRef = FBE0D6331A619A810088E97F /* Es5.c */; };
+		FBE0D63D1A61AEA70088E97F /* Esame.c in Sources */ = {isa = PBXBuildFile; fileRef = FBE0D63B1A61AEA70088E97F /* Esame.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,10 +32,10 @@
 		FB83985C1A5D9EF800B91F34 /* es1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es1.pdf; path = "Esercizio 1/es1.pdf"; sourceTree = "<group>"; };
 		FB83985D1A5D9F0000B91F34 /* es2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es2.pdf; path = "Esercizio 2/es2.pdf"; sourceTree = "<group>"; };
 		FB83985E1A5D9F0700B91F34 /* es3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es3.pdf; path = "Esercizio 3/es3.pdf"; sourceTree = "<group>"; };
-		FBE0D6331A619A810088E97F /* Es5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Es5.c; path = "Esercizio 5/Es5.c"; sourceTree = "<group>"; };
-		FBE0D6351A619A8E0088E97F /* Es5.go */ = {isa = PBXFileReference; lastKnownFileType = text; name = Es5.go; path = "Esercizio 5/Es5.go"; sourceTree = "<group>"; };
-		FBE0D6361A61AD180088E97F /* Es5_A.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Es5_A.pdf; path = "Esercizio 5/Es5_A.pdf"; sourceTree = "<group>"; };
-		FBE0D6371A61AD180088E97F /* Es5_B.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Es5_B.pdf; path = "Esercizio 5/Es5_B.pdf"; sourceTree = "<group>"; };
+		FBE0D6391A61AEA70088E97F /* Esame_A.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Esame_A.pdf; path = "Esame[22-12-2014]/Esame_A.pdf"; sourceTree = "<group>"; };
+		FBE0D63A1A61AEA70088E97F /* Esame_B.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Esame_B.pdf; path = "Esame[22-12-2014]/Esame_B.pdf"; sourceTree = "<group>"; };
+		FBE0D63B1A61AEA70088E97F /* Esame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Esame.c; path = "Esame[22-12-2014]/Esame.c"; sourceTree = "<group>"; };
+		FBE0D63C1A61AEA70088E97F /* Esame.go */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Esame.go; path = "Esame[22-12-2014]/Esame.go"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 				FB83984B1A5D918600B91F34 /* Esercizio 1 */,
 				FB83984C1A5D919100B91F34 /* Esercizio 2 */,
 				FB83984D1A5D919A00B91F34 /* Esercizio 3 */,
-				FBE0D6321A619A490088E97F /* Esercizio 5 */,
+				FBE0D6381A61AE940088E97F /* Esame[22-12-14] */,
 			);
 			path = EserciziSistemiOperativi;
 			sourceTree = "<group>";
@@ -113,15 +113,15 @@
 			name = "Esercizio 3";
 			sourceTree = "<group>";
 		};
-		FBE0D6321A619A490088E97F /* Esercizio 5 */ = {
+		FBE0D6381A61AE940088E97F /* Esame[22-12-14] */ = {
 			isa = PBXGroup;
 			children = (
-				FBE0D6361A61AD180088E97F /* Es5_A.pdf */,
-				FBE0D6371A61AD180088E97F /* Es5_B.pdf */,
-				FBE0D6351A619A8E0088E97F /* Es5.go */,
-				FBE0D6331A619A810088E97F /* Es5.c */,
+				FBE0D6391A61AEA70088E97F /* Esame_A.pdf */,
+				FBE0D63A1A61AEA70088E97F /* Esame_B.pdf */,
+				FBE0D63B1A61AEA70088E97F /* Esame.c */,
+				FBE0D63C1A61AEA70088E97F /* Esame.go */,
 			);
-			name = "Esercizio 5";
+			name = "Esame[22-12-14]";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE0D6341A619A810088E97F /* Es5.c in Sources */,
+				FBE0D63D1A61AEA70088E97F /* Esame.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
