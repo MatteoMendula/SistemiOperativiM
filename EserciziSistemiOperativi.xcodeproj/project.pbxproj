@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBE0D63D1A61AEA70088E97F /* Esame.c in Sources */ = {isa = PBXBuildFile; fileRef = FBE0D63B1A61AEA70088E97F /* Esame.c */; };
+		FB5C66221A62EE2A009BA513 /* Esame.c in Sources */ = {isa = PBXBuildFile; fileRef = FB5C66211A62EE2A009BA513 /* Esame.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB5C66201A62EE13009BA513 /* Esame.go */ = {isa = PBXFileReference; lastKnownFileType = text; name = Esame.go; path = "EserciziSistemiOperativi/SimulazioneEsame[18-12-2014]/Esame.go"; sourceTree = "<group>"; };
+		FB5C66211A62EE2A009BA513 /* Esame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Esame.c; path = "EserciziSistemiOperativi/SimulazioneEsame[18-12-2014]/Esame.c"; sourceTree = "<group>"; };
 		FB8398361A5D80B800B91F34 /* EserciziSistemiOperativi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EserciziSistemiOperativi; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB83984E1A5D9E0F00B91F34 /* Es0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Es0.c; path = "Esercizio 0/Es0.c"; sourceTree = "<group>"; };
 		FB8398501A5D9E1900B91F34 /* Es1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Es1.c; path = "Esercizio 1/Es1.c"; sourceTree = "<group>"; };
@@ -49,6 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB5C661F1A62EDEE009BA513 /* SimulazioneEsame[18-12-14] */ = {
+			isa = PBXGroup;
+			children = (
+				FB5C66201A62EE13009BA513 /* Esame.go */,
+				FB5C66211A62EE2A009BA513 /* Esame.c */,
+			);
+			name = "SimulazioneEsame[18-12-14]";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		FB83982D1A5D80B800B91F34 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +85,7 @@
 				FB83984C1A5D919100B91F34 /* Esercizio 2 */,
 				FB83984D1A5D919A00B91F34 /* Esercizio 3 */,
 				FBE0D6381A61AE940088E97F /* Esame[22-12-14] */,
+				FB5C661F1A62EDEE009BA513 /* SimulazioneEsame[18-12-14] */,
 			);
 			path = EserciziSistemiOperativi;
 			sourceTree = "<group>";
@@ -180,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE0D63D1A61AEA70088E97F /* Esame.c in Sources */,
+				FB5C66221A62EE2A009BA513 /* Esame.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
