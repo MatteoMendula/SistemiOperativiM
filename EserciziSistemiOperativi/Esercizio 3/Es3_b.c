@@ -71,6 +71,13 @@ int found_winner()
     return max;
 }
 
+/**
+ * @Author
+ @parma
+ *
+ *
+ */
+
 void * spettatore(void * t)
 {
     int tid = (unsigned int) t;
