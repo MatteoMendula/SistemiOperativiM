@@ -56,6 +56,7 @@ void * cuoco_thread(void * t)
 void * dipendente_thread(void * t)
 {
     return NULL;
+
 }
 
 //utils
