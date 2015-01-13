@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB4169BE1A655C9B005D31A1 /* Template_Monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = FB4169BA1A655C9B005D31A1 /* Template_Monitor.c */; };
-		FB4169BF1A655C9B005D31A1 /* Template_Semafori.c in Sources */ = {isa = PBXBuildFile; fileRef = FB4169BC1A655C9B005D31A1 /* Template_Semafori.c */; };
+		FB4169CB1A65687C005D31A1 /* Esame.c in Sources */ = {isa = PBXBuildFile; fileRef = FB4169C81A65687C005D31A1 /* Esame.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +28,9 @@
 		FB4169BC1A655C9B005D31A1 /* Template_Semafori.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Template_Semafori.c; path = Templates/C/Template_Semafori.c; sourceTree = "<group>"; };
 		FB4169BD1A655C9B005D31A1 /* Template_Semafori.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Template_Semafori.h; path = Templates/C/Template_Semafori.h; sourceTree = "<group>"; };
 		FB4169C01A656389005D31A1 /* Template.go */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Template.go; path = Templates/Go/Template.go; sourceTree = "<group>"; };
+		FB4169C81A65687C005D31A1 /* Esame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Esame.c; path = "Esame[11-01-2010]/Esame.c"; sourceTree = "<group>"; };
+		FB4169C91A65687C005D31A1 /* Esame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Esame.h; path = "Esame[11-01-2010]/Esame.h"; sourceTree = "<group>"; };
+		FB4169CA1A65687C005D31A1 /* testi100111-sala.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "testi100111-sala.pdf"; path = "Esame[11-01-2010]/testi100111-sala.pdf"; sourceTree = "<group>"; };
 		FB5C66201A62EE13009BA513 /* Esame.go */ = {isa = PBXFileReference; lastKnownFileType = text; name = Esame.go; path = "EserciziSistemiOperativi/SimulazioneEsame[18-12-2014]/Esame.go"; sourceTree = "<group>"; };
 		FB5C66211A62EE2A009BA513 /* Esame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Esame.c; path = "EserciziSistemiOperativi/SimulazioneEsame[18-12-2014]/Esame.c"; sourceTree = "<group>"; };
 		FB8398361A5D80B800B91F34 /* EserciziSistemiOperativi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EserciziSistemiOperativi; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,16 @@
 			name = Go;
 			sourceTree = "<group>";
 		};
+		FB4169C11A6567EA005D31A1 /* Esame[11-01-10] */ = {
+			isa = PBXGroup;
+			children = (
+				FB4169C81A65687C005D31A1 /* Esame.c */,
+				FB4169C91A65687C005D31A1 /* Esame.h */,
+				FB4169CA1A65687C005D31A1 /* testi100111-sala.pdf */,
+			);
+			name = "Esame[11-01-10]";
+			sourceTree = "<group>";
+		};
 		FB5C661F1A62EDEE009BA513 /* SimulazioneEsame[18-12-14] */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +126,7 @@
 		FB8398381A5D80B800B91F34 /* EserciziSistemiOperativi */ = {
 			isa = PBXGroup;
 			children = (
+				FB4169C11A6567EA005D31A1 /* Esame[11-01-10] */,
 				FB4169B11A65331D005D31A1 /* Templates */,
 				FB83984A1A5D917C00B91F34 /* Esercizio 0 */,
 				FB83984B1A5D918600B91F34 /* Esercizio 1 */,
@@ -228,8 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB4169BE1A655C9B005D31A1 /* Template_Monitor.c in Sources */,
-				FB4169BF1A655C9B005D31A1 /* Template_Semafori.c in Sources */,
+				FB4169CB1A65687C005D31A1 /* Esame.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
