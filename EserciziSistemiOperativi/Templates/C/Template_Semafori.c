@@ -11,11 +11,13 @@
 
 void * thread1(void * t)
 {
+    /*
     pthread_mutex_lock(&monitor.lock);
     
     //SEZIONE CRITICA
     
     pthread_mutex_unlock(&monitor.lock);
+    */
     
     pthread_exit(NULL);
 }
