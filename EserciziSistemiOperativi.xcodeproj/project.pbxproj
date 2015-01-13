@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB4169B71A655851005D31A1 /* Template_Monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = FB4169B51A655851005D31A1 /* Template_Monitor.c */; };
+		FB4169BE1A655C9B005D31A1 /* Template_Monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = FB4169BA1A655C9B005D31A1 /* Template_Monitor.c */; };
+		FB4169BF1A655C9B005D31A1 /* Template_Semafori.c in Sources */ = {isa = PBXBuildFile; fileRef = FB4169BC1A655C9B005D31A1 /* Template_Semafori.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,10 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FB4169B21A653336005D31A1 /* Template_Semafori.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Template_Semafori.c; path = Templates/Template_Semafori.c; sourceTree = "<group>"; };
-		FB4169B31A653336005D31A1 /* Template_Semafori.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Template_Semafori.h; path = Templates/Template_Semafori.h; sourceTree = "<group>"; };
-		FB4169B51A655851005D31A1 /* Template_Monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Template_Monitor.c; path = Templates/Template_Monitor.c; sourceTree = "<group>"; };
-		FB4169B61A655851005D31A1 /* Template_Monitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Template_Monitor.h; path = Templates/Template_Monitor.h; sourceTree = "<group>"; };
+		FB4169BA1A655C9B005D31A1 /* Template_Monitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Template_Monitor.c; path = Templates/C/Template_Monitor.c; sourceTree = "<group>"; };
+		FB4169BB1A655C9B005D31A1 /* Template_Monitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Template_Monitor.h; path = Templates/C/Template_Monitor.h; sourceTree = "<group>"; };
+		FB4169BC1A655C9B005D31A1 /* Template_Semafori.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Template_Semafori.c; path = Templates/C/Template_Semafori.c; sourceTree = "<group>"; };
+		FB4169BD1A655C9B005D31A1 /* Template_Semafori.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Template_Semafori.h; path = Templates/C/Template_Semafori.h; sourceTree = "<group>"; };
 		FB5C66201A62EE13009BA513 /* Esame.go */ = {isa = PBXFileReference; lastKnownFileType = text; name = Esame.go; path = "EserciziSistemiOperativi/SimulazioneEsame[18-12-2014]/Esame.go"; sourceTree = "<group>"; };
 		FB5C66211A62EE2A009BA513 /* Esame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Esame.c; path = "EserciziSistemiOperativi/SimulazioneEsame[18-12-2014]/Esame.c"; sourceTree = "<group>"; };
 		FB8398361A5D80B800B91F34 /* EserciziSistemiOperativi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EserciziSistemiOperativi; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,12 +59,28 @@
 		FB4169B11A65331D005D31A1 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				FB4169B21A653336005D31A1 /* Template_Semafori.c */,
-				FB4169B31A653336005D31A1 /* Template_Semafori.h */,
-				FB4169B51A655851005D31A1 /* Template_Monitor.c */,
-				FB4169B61A655851005D31A1 /* Template_Monitor.h */,
+				FB4169B91A655C88005D31A1 /* Go */,
+				FB4169B81A655C82005D31A1 /* C */,
 			);
 			name = Templates;
+			sourceTree = "<group>";
+		};
+		FB4169B81A655C82005D31A1 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FB4169BA1A655C9B005D31A1 /* Template_Monitor.c */,
+				FB4169BB1A655C9B005D31A1 /* Template_Monitor.h */,
+				FB4169BC1A655C9B005D31A1 /* Template_Semafori.c */,
+				FB4169BD1A655C9B005D31A1 /* Template_Semafori.h */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		FB4169B91A655C88005D31A1 /* Go */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Go;
 			sourceTree = "<group>";
 		};
 		FB5C661F1A62EDEE009BA513 /* SimulazioneEsame[18-12-14] */ = {
@@ -209,7 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB4169B71A655851005D31A1 /* Template_Monitor.c in Sources */,
+				FB4169BE1A655C9B005D31A1 /* Template_Monitor.c in Sources */,
+				FB4169BF1A655C9B005D31A1 /* Template_Semafori.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
