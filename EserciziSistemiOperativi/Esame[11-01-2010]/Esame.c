@@ -226,6 +226,7 @@ int main(int argc, char *  argv[])
         if(result)
         {
             printf("Errore nel join del thread %d con stato %d e risultato %d\n", i, result, (int)(intptr_t)status);
+            exit(-1);
         }
     }
     
@@ -235,6 +236,7 @@ int main(int argc, char *  argv[])
         if(result)
         {
             printf("Errore nel join del thread %d con stato %d e risultato %d\n", i, result, (int)(intptr_t)status);
+            exit(-1);
         }
     }
     
