@@ -78,8 +78,8 @@ func server(){
 				ack_canale1[x]
 			case x:=<-when((condizione), canale2):
 				ack_canale2[x]
-			case x:=<-termina:
-				<-done
+			case <-termina:
+				done <- true
 				return
 		}
 	}
@@ -87,7 +87,7 @@ func server(){
 
 func main(){
 	
-	fmt.Printf("Programma avviato")
+	fmt.Printf("Programma avviato\n")
 	rand.Seed(time.Now().Unix())
 	
 	//inizializzo canali ack

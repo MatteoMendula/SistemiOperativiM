@@ -17,9 +17,11 @@
 typedef struct
 {
     pthread_mutex_t lock;
-    pthread_cond_t condition1;
-    pthread_cond_t condition2;
-    int n;
+    pthread_cond_t coda1;
+    pthread_cond_t coda2;
+    
+    int n_in_coda1;
+    int n_in_coda2;
     
 } Monitor;
 
@@ -29,6 +31,10 @@ Monitor monitor;
 
 //FUNZIONI
 void init_monitor(Monitor *);
+void entra(Monitor *);
+void esce(Monitor *);
+void entra2(Monitor *, int *);
+void esce2(Monitor *, int *);
 
 //THREADS
 void * thread1(void *);

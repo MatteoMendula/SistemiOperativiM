@@ -141,6 +141,7 @@
 		FB8398381A5D80B800B91F34 /* EserciziSistemiOperativi */ = {
 			isa = PBXGroup;
 			children = (
+				FBDDFB501A6848490094C607 /* Esame[19-06-12] */,
 				FBDDFB4F1A6814300094C607 /* Esame[11-01-10]_bis */,
 				FB72A6801A67BF0A00592164 /* Esame[26-06-14] */,
 				FB4169C11A6567EA005D31A1 /* Esame[11-01-10] */,
@@ -198,6 +199,13 @@
 				FBDDFB4D1A68142A0094C607 /* 20100111.h */,
 			);
 			name = "Esame[11-01-10]_bis";
+			sourceTree = "<group>";
+		};
+		FBDDFB501A6848490094C607 /* Esame[19-06-12] */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Esame[19-06-12]";
 			sourceTree = "<group>";
 		};
 		FBE0D6381A61AE940088E97F /* Esame[22-12-14] */ = {
