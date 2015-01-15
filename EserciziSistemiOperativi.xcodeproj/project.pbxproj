@@ -33,6 +33,7 @@
 		FB4169CA1A65687C005D31A1 /* testi100111-sala.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "testi100111-sala.pdf"; path = "Esame[11-01-2010]/testi100111-sala.pdf"; sourceTree = "<group>"; };
 		FB5C66201A62EE13009BA513 /* Esame.go */ = {isa = PBXFileReference; lastKnownFileType = text; name = Esame.go; path = "EserciziSistemiOperativi/SimulazioneEsame[18-12-2014]/Esame.go"; sourceTree = "<group>"; };
 		FB5C66211A62EE2A009BA513 /* Esame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Esame.c; path = "EserciziSistemiOperativi/SimulazioneEsame[18-12-2014]/Esame.c"; sourceTree = "<group>"; };
+		FB6C806F1A67E20600ECABF8 /* 20140626.go */ = {isa = PBXFileReference; lastKnownFileType = text; name = 20140626.go; path = "Esame[26-06-2014]/20140626.go"; sourceTree = "<group>"; };
 		FB72A6811A67BF7C00592164 /* 20140626.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = 20140626.c; path = "Esame[26-06-2014]/20140626.c"; sourceTree = "<group>"; };
 		FB72A6821A67BF7C00592164 /* 20140626.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 20140626.h; path = "Esame[26-06-2014]/20140626.h"; sourceTree = "<group>"; };
 		FB8398361A5D80B800B91F34 /* EserciziSistemiOperativi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EserciziSistemiOperativi; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +113,7 @@
 		FB72A6801A67BF0A00592164 /* Esame[26-06-14] */ = {
 			isa = PBXGroup;
 			children = (
+				FB6C806F1A67E20600ECABF8 /* 20140626.go */,
 				FB72A6811A67BF7C00592164 /* 20140626.c */,
 				FB72A6821A67BF7C00592164 /* 20140626.h */,
 			);
