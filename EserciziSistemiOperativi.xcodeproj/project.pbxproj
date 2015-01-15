@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBDDFB531A684B510094C607 /* 20120619.c in Sources */ = {isa = PBXBuildFile; fileRef = FBDDFB511A684B510094C607 /* 20120619.c */; };
+		FB74CB911A68764500522F01 /* 20140115.c in Sources */ = {isa = PBXBuildFile; fileRef = FB74CB8F1A68764500522F01 /* 20140115.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +36,8 @@
 		FB6C806F1A67E20600ECABF8 /* 20140626.go */ = {isa = PBXFileReference; lastKnownFileType = text; name = 20140626.go; path = "Esame[26-06-2014]/20140626.go"; sourceTree = "<group>"; };
 		FB72A6811A67BF7C00592164 /* 20140626.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = 20140626.c; path = "Esame[26-06-2014]/20140626.c"; sourceTree = "<group>"; };
 		FB72A6821A67BF7C00592164 /* 20140626.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 20140626.h; path = "Esame[26-06-2014]/20140626.h"; sourceTree = "<group>"; };
+		FB74CB8F1A68764500522F01 /* 20140115.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = 20140115.c; path = "Esame[15-01-2014]/20140115.c"; sourceTree = "<group>"; };
+		FB74CB901A68764500522F01 /* 20140115.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 20140115.h; path = "Esame[15-01-2014]/20140115.h"; sourceTree = "<group>"; };
 		FB8398361A5D80B800B91F34 /* EserciziSistemiOperativi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EserciziSistemiOperativi; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB83984E1A5D9E0F00B91F34 /* Es0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Es0.c; path = "Esercizio 0/Es0.c"; sourceTree = "<group>"; };
 		FB8398501A5D9E1900B91F34 /* Es1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Es1.c; path = "Esercizio 1/Es1.c"; sourceTree = "<group>"; };
@@ -124,6 +126,15 @@
 			name = "Esame[26-06-14]";
 			sourceTree = "<group>";
 		};
+		FB74CB8E1A68762F00522F01 /* Esame[15-01-2014] */ = {
+			isa = PBXGroup;
+			children = (
+				FB74CB8F1A68764500522F01 /* 20140115.c */,
+				FB74CB901A68764500522F01 /* 20140115.h */,
+			);
+			name = "Esame[15-01-2014]";
+			sourceTree = "<group>";
+		};
 		FB83982D1A5D80B800B91F34 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +154,7 @@
 		FB8398381A5D80B800B91F34 /* EserciziSistemiOperativi */ = {
 			isa = PBXGroup;
 			children = (
+				FB74CB8E1A68762F00522F01 /* Esame[15-01-2014] */,
 				FBDDFB501A6848490094C607 /* Esame[19-06-12] */,
 				FBDDFB4F1A6814300094C607 /* Esame[11-01-10]_bis */,
 				FB72A6801A67BF0A00592164 /* Esame[26-06-14] */,
@@ -279,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDDFB531A684B510094C607 /* 20120619.c in Sources */,
+				FB74CB911A68764500522F01 /* 20140115.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
