@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBDDFB4E1A68142A0094C607 /* 20100111.c in Sources */ = {isa = PBXBuildFile; fileRef = FBDDFB4C1A68142A0094C607 /* 20100111.c */; };
+		FBDDFB531A684B510094C607 /* 20120619.c in Sources */ = {isa = PBXBuildFile; fileRef = FBDDFB511A684B510094C607 /* 20120619.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +47,8 @@
 		FB83985E1A5D9F0700B91F34 /* es3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es3.pdf; path = "Esercizio 3/es3.pdf"; sourceTree = "<group>"; };
 		FBDDFB4C1A68142A0094C607 /* 20100111.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = 20100111.c; path = "Esame[11-01-2010]_bis/20100111.c"; sourceTree = "<group>"; };
 		FBDDFB4D1A68142A0094C607 /* 20100111.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 20100111.h; path = "Esame[11-01-2010]_bis/20100111.h"; sourceTree = "<group>"; };
+		FBDDFB511A684B510094C607 /* 20120619.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = 20120619.c; path = "Esame[19-06-2012]/20120619.c"; sourceTree = "<group>"; };
+		FBDDFB521A684B510094C607 /* 20120619.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 20120619.h; path = "Esame[19-06-2012]/20120619.h"; sourceTree = "<group>"; };
 		FBE0D6391A61AEA70088E97F /* Esame_A.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Esame_A.pdf; path = "Esame[22-12-2014]/Esame_A.pdf"; sourceTree = "<group>"; };
 		FBE0D63A1A61AEA70088E97F /* Esame_B.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Esame_B.pdf; path = "Esame[22-12-2014]/Esame_B.pdf"; sourceTree = "<group>"; };
 		FBE0D63B1A61AEA70088E97F /* Esame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Esame.c; path = "Esame[22-12-2014]/Esame.c"; sourceTree = "<group>"; };
@@ -204,6 +206,8 @@
 		FBDDFB501A6848490094C607 /* Esame[19-06-12] */ = {
 			isa = PBXGroup;
 			children = (
+				FBDDFB511A684B510094C607 /* 20120619.c */,
+				FBDDFB521A684B510094C607 /* 20120619.h */,
 			);
 			name = "Esame[19-06-12]";
 			sourceTree = "<group>";
@@ -275,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBDDFB4E1A68142A0094C607 /* 20100111.c in Sources */,
+				FBDDFB531A684B510094C607 /* 20120619.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

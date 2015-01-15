@@ -43,7 +43,7 @@ void entra(Monitor * m)
     //cose da fare quando mi sblocco
     
     //risveglio secondo priorità
-    if(n_in_coda1 > 0)
+    if(m->n_in_coda1 > 0)
         pthread_cond_signal(&m->coda1);
     else if(m->n_in_coda2 > 0)
         pthread_cond_signal(&m->coda2);
