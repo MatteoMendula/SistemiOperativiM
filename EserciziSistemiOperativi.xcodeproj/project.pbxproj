@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB72A6831A67BF7C00592164 /* 20140626.c in Sources */ = {isa = PBXBuildFile; fileRef = FB72A6811A67BF7C00592164 /* 20140626.c */; };
+		FBDDFB4E1A68142A0094C607 /* 20100111.c in Sources */ = {isa = PBXBuildFile; fileRef = FBDDFB4C1A68142A0094C607 /* 20100111.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +45,8 @@
 		FB83985C1A5D9EF800B91F34 /* es1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es1.pdf; path = "Esercizio 1/es1.pdf"; sourceTree = "<group>"; };
 		FB83985D1A5D9F0000B91F34 /* es2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es2.pdf; path = "Esercizio 2/es2.pdf"; sourceTree = "<group>"; };
 		FB83985E1A5D9F0700B91F34 /* es3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = es3.pdf; path = "Esercizio 3/es3.pdf"; sourceTree = "<group>"; };
+		FBDDFB4C1A68142A0094C607 /* 20100111.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = 20100111.c; path = "Esame[11-01-2010]_bis/20100111.c"; sourceTree = "<group>"; };
+		FBDDFB4D1A68142A0094C607 /* 20100111.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 20100111.h; path = "Esame[11-01-2010]_bis/20100111.h"; sourceTree = "<group>"; };
 		FBE0D6391A61AEA70088E97F /* Esame_A.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Esame_A.pdf; path = "Esame[22-12-2014]/Esame_A.pdf"; sourceTree = "<group>"; };
 		FBE0D63A1A61AEA70088E97F /* Esame_B.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Esame_B.pdf; path = "Esame[22-12-2014]/Esame_B.pdf"; sourceTree = "<group>"; };
 		FBE0D63B1A61AEA70088E97F /* Esame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Esame.c; path = "Esame[22-12-2014]/Esame.c"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		FB8398381A5D80B800B91F34 /* EserciziSistemiOperativi */ = {
 			isa = PBXGroup;
 			children = (
+				FBDDFB4F1A6814300094C607 /* Esame[11-01-10]_bis */,
 				FB72A6801A67BF0A00592164 /* Esame[26-06-14] */,
 				FB4169C11A6567EA005D31A1 /* Esame[11-01-10] */,
 				FB4169B11A65331D005D31A1 /* Templates */,
@@ -186,6 +189,15 @@
 				FB83985A1A5D9E7200B91F34 /* Es3_b.c */,
 			);
 			name = "Esercizio 3";
+			sourceTree = "<group>";
+		};
+		FBDDFB4F1A6814300094C607 /* Esame[11-01-10]_bis */ = {
+			isa = PBXGroup;
+			children = (
+				FBDDFB4C1A68142A0094C607 /* 20100111.c */,
+				FBDDFB4D1A68142A0094C607 /* 20100111.h */,
+			);
+			name = "Esame[11-01-10]_bis";
 			sourceTree = "<group>";
 		};
 		FBE0D6381A61AE940088E97F /* Esame[22-12-14] */ = {
@@ -255,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB72A6831A67BF7C00592164 /* 20140626.c in Sources */,
+				FBDDFB4E1A68142A0094C607 /* 20100111.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
