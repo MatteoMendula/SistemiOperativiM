@@ -9,8 +9,11 @@ Le soluzioni degli esami sono scritte in maniera estremamente verbosa per render
 #### Per compilare i programmi Go utilizzare:
 `go run *.go`
 
-#####Riassunto della teoria
+##### Riassunto della teoria
 [Qui](https://github.com/marmos91/SistemiOperativiM/blob/master/%5BTeoria%5D%20Sistemi%20Operativi%20M.pdf) potrete trovare il pdf con il riassunto della teoria.
+
+##### Utilizzare l'interrogatore
+Lanciare il comando `python interrogatore.py` da terminale. Il programma estrarrà delle domande in ordine casuale dalla lista inserita al suo interno, mostrando più spesso quelle con un punteggio assegnato maggiore.
 
 #### Lavorare con Xcode
 Il compilatore C di Mac OS considera **deprecati** i semafori standard pthread come utilizzati nel corso. 
