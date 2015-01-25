@@ -10,6 +10,6 @@ Le soluzioni degli esami sono scritte in maniera estremamente verbosa per render
 `go run *.go`
 
 #####Riassunto della teoria
-[Qui](http://) potrete trovare il pdf con il riassunto della teoria.
+[Qui](https://github.com/marmos91/SistemiOperativiM/blob/master/%5BTeoria%5D%20Sistemi%20Operativi%20M.pdf) potrete trovare il pdf con il riassunto della teoria.
 
 Qualsiasi contributo è ben accetto! Buono studio.
